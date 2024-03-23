@@ -35,8 +35,8 @@ const TabNavigator = () => {
         tabBarInactiveTintColor: 'gray', 
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="home" component={HomeScreen} />
+      <Tab.Screen name="settings" component={SettingsScreen} />
       
     </Tab.Navigator>
   );
@@ -45,7 +45,7 @@ const TabNavigator = () => {
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="login">
         <Stack.Screen
           name="Login"
           component={LoginScreen}
